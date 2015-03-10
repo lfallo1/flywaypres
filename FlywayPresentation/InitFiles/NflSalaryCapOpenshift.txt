@@ -1,0 +1,37 @@
+Tomcat7 app
+-----------
+  URL:        http://app-nflsalarycap.rhcloud.com/
+  SSH to:     54fa3639fcf933e979000278@app-nflsalarycap.rhcloud.com
+  Git remote: ssh://54fa3639fcf933e979000278@app-nflsalarycap.rhcloud.com/~/git/app.git/
+  Cloned to:  c:/Users/lfallo1/workspace/app
+
+
+mysql-5.5 (MySQL 5.5)
+---------------------
+  Gears:          Located with jbossews-2.0
+  Connection URL: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/
+  Database Name:  app
+  Password:       2517vBMmCi6v
+  Username:       adminZ75rUeZ
+
+
+phpmyadmin-4 (phpMyAdmin 4.0)
+-----------------------------
+  Gears:          Located with jbossews-2.0, mysql-5.5
+  Connection URL: https://app-nflsalarycap.rhcloud.com/phpmyadmin/
+
+Please make note of these MySQL credentials again:
+  Root User: adminZ75rUeZ
+  Root Password: 2517vBMmCi6v
+URL: https://app-nflsalarycap.rhcloud.com/phpmyadmin/
+
+     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" depends-on="flyway">
+ 	    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://127.12.26.2:3306/nflsalarycap" />
+		<property name="username" value="adminZ75rUeZ" />
+		<property name="password" value="2517vBMmCi6v" />
+     </bean>
+	 
+
+***Enable port forwarding for access to remote MySQL***
+rhc port-forward -a <<application_name>>

@@ -1,0 +1,1 @@
+UPDATE `salary_cap_constants` SET `year`='2017', `salary_cap`='160000000' WHERE `team`='15' and `adjusted_cap`='160000000';

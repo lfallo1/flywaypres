@@ -1,0 +1,1 @@
+update yearly_contract set status = "other" where status is null;

@@ -1,0 +1,37 @@
+ALTER TABLE `team` 
+ADD COLUMN `primary_color` VARCHAR(45) NULL AFTER `logo`,
+ADD COLUMN `secondary_color` VARCHAR(45) NULL AFTER `primary_color`;
+
+UPDATE `team` SET `primary_color`='', `secondary_color`='' WHERE `id`='0';
+UPDATE `team` SET `primary_color`='BD0D18', `secondary_color`='DCE0E5' WHERE `id`='25';
+UPDATE `team` SET `primary_color`='280353', `secondary_color`='D0B240' WHERE `id`='5';
+UPDATE `team` SET `primary_color`='00338D', `secondary_color`='C60C30' WHERE `id`='1';
+UPDATE `team` SET `primary_color`='0088CE', `secondary_color`='A5ACAF' WHERE `id`='26';
+UPDATE `team` SET `primary_color`='03202F', `secondary_color`='DD4814' WHERE `id`='21';
+UPDATE `team` SET `primary_color`='000000', `secondary_color`='FB4F14' WHERE `id`='7';
+UPDATE `team` SET `primary_color`='26201E', `secondary_color`='E34912' WHERE `id`='6';
+UPDATE `team` SET `primary_color`='002244', `secondary_color`='8C8B8A' WHERE `id`='18';
+UPDATE `team` SET `primary_color`='002244', `secondary_color`='FB4F14' WHERE `id`='13';
+UPDATE `team` SET `primary_color`='006DB0', `secondary_color`='C5C7CF' WHERE `id`='22';
+UPDATE `team` SET `primary_color`='213D30', `secondary_color`='FFCC00' WHERE `id`='23';
+UPDATE `team` SET `primary_color`='000000', `secondary_color`='870619' WHERE `id`='29';
+UPDATE `team` SET `primary_color`='022F3A', `secondary_color`='B31B34' WHERE `id`='9';
+UPDATE `team` SET `primary_color`='D60A0B', `secondary_color`='89765F' WHERE `id`='28';
+UPDATE `team` SET `primary_color`='007198', `secondary_color`='D0B239' WHERE `id`='11';
+UPDATE `team` SET `primary_color`='B20032', `secondary_color`='F2C800' WHERE `id`='14';
+UPDATE `team` SET `primary_color`='008D97', `secondary_color`='F5811F' WHERE `id`='3';
+UPDATE `team` SET `primary_color`='4F2682', `secondary_color`='FFC52F' WHERE `id`='24';
+UPDATE `team` SET `primary_color`='0D254C', `secondary_color`='C80815' WHERE `id`='2';
+UPDATE `team` SET `primary_color`='D2B887', `secondary_color`='000000' WHERE `id`='27';
+UPDATE `team` SET `primary_color`='192F6B', `secondary_color`='CA001A' WHERE `id`='17';
+UPDATE `team` SET `primary_color`='0C371D', `secondary_color`='000000' WHERE `id`='4';
+UPDATE `team` SET `primary_color`='C4C86B', `secondary_color`='000000' WHERE `id`='16';
+UPDATE `team` SET `primary_color`='00CB48', `secondary_color`='708090' WHERE `id`='19';
+UPDATE `team` SET `primary_color`='F2C800', `secondary_color`='000000' WHERE `id`='8';
+UPDATE `team` SET `primary_color`='08214A', `secondary_color`='EEC607' WHERE `id`='15';
+UPDATE `team` SET `primary_color`='A41E2C', `secondary_color`='E6BE8A' WHERE `id`='31';
+UPDATE `team` SET `primary_color`='06192E', `secondary_color`='4EAE47' WHERE `id`='32';
+UPDATE `team` SET `primary_color`='13264B', `secondary_color`='C9AF74' WHERE `id`='30';
+UPDATE `team` SET `primary_color`='003B7B', `secondary_color`='000000' WHERE `id`='10';
+UPDATE `team` SET `primary_color`='000080', `secondary_color`='FF0000' WHERE `id`='12';
+UPDATE `team` SET `primary_color`='773141', `secondary_color`='FFB612' WHERE `id`='20';

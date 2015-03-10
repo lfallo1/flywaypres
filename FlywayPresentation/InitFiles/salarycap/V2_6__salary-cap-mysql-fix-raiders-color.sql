@@ -1,0 +1,1 @@
+UPDATE `team` SET `primary_color`='C4C8CB' WHERE `id`='16';

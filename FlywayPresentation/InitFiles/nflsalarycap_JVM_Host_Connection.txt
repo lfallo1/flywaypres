@@ -1,0 +1,7 @@
+JVM HOST MySQL
+---------------
+
+Host: 173.243.120.226
+Port: 3306
+Username: nflcapsi_lfallon
+Password: Raven$1996

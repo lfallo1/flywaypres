@@ -1,0 +1,44 @@
+***!!CLOSE APPS BEFORE DOING A GIT CHECKOUT!!***
+
+-------------------------
+CONTACT INFO APPLICATIONS
+-------------------------
+**Use the sql scripts inside sql/flywaydemo folder. Use flyway_flywaydemo.properties conf file
+**DATABASE = flyway_demo_prod
+
+- flywaydemo (conole app, with versions for .sql & .java migrations)
+  -->Project Name = "flywaydemo"
+  (a).SQL VERSION
+    >clean flyway_demo_prod
+    >checkout stage1 / execute
+    >checkout stage2 / execute
+    >checkout master / execute
+  (b).JAVA Migrations (include callbacks, which store info inside a tracker table)
+    >clean flyway_demo_prod
+    >execute application
+
+- flywaydemo_spring (java spring web application)
+  -->Project Name = "flywaydemo-spring"
+    >clean flyway_demo_prod
+    >checkout stage1, 2 & then master
+
+--------------
+SALARY CAP APP
+--------------
+**Use the sql scripts inside sql/salarycap folder. Use flyway_salarycap.properties conf file
+**DATABASE = nflcapsi_salarycap
+
+JVM HOST MySQL
+==============
+Host: 173.243.120.226
+Port: 3306
+Username: nflcapsi_lfallon
+Password: Raven$1996
+
+- update & re-run salarycap
+  -->Go to db/website (show old versions)
+  -->Log into JVM, update
+    (a) shutdown java
+    (b) delete ROOT folder inside webapps dir
+    (c) modify ROOT.xml to reference nflsalarycap.war
+    (d) restart java

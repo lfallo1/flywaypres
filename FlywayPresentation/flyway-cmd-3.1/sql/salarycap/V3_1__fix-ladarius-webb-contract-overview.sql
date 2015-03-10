@@ -1,0 +1,1 @@
+UPDATE `contract_overview` SET `free_agent_year`='2018' WHERE `id`='1347';

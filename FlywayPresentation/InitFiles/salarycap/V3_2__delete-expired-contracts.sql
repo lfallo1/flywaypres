@@ -1,0 +1,1 @@
+delete from yearly_contract where status = 'Other';

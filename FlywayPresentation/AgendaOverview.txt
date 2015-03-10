@@ -1,0 +1,14 @@
+- What is flyway? What it is not. Why db migration?
+--> Do some research & get some decent explanations (5 mins)
+
+- Config & settings
+-->Walk through the folder structure, properties file, and available options
+-->Explain that migrations be run using .sql or .java (using jdbc) files (10 mins)
+
+- Commands (info, migrate, repair, clean, baseline, validate)
+(5 minutes)
+
+- Demos (contact-demo & nflcapsimulator demo)
+(15 minutes)
+
+- Challenge (TODO)
